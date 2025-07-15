@@ -171,7 +171,7 @@
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'www.dashachun.xyz',
+      envId: 'https://dashachun.xyz/',
       region: 'ap-shanghai',
       urls: [window.location.pathname],
       includeReply: false
@@ -185,7 +185,7 @@
   const init = (el = document, path = location.pathname) => {
     twikoo.init({
       el: el.querySelector('#twikoo-wrap'),
-      envId: 'www.dashachun.xyz',
+      envId: 'https://dashachun.xyz/',
       region: 'ap-shanghai',
       onCommentLoaded: () => {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
